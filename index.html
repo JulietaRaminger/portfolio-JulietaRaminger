@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("TU_USER_ID"); // Reemplaza "TU_USER_ID" con tu ID de usuario de EmailJS
+        })();
+    </script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Julieta Raminger</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#experience">Educación</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Julieta Raminger</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Educación</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projectos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/images/juli.jpg" alt="" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, yo soy</p>
+            <h1 class="title">Julieta Raminger</h1>
+            <p class="section__text__p2">Desarrolladora Web</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV - Julieta Raminger.pdf')">
+                    Descarca mi CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contacto
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href='https://www.linkedin.com/in/julieta-raminger-programacion/' target="_blank">
+                    <i class='bx bxl-linkedin-square iconos'></i>
+                </a>
+
+                <a href='https://github.com/JulietaRaminger' target="_blank">
+                    <i class='bx bxl-github iconos'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Conozca mas</p>
+        <h1 class="title">Sobre mi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/images/juli2.jpg" alt="foto" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        Mi viaje en el mundo del desarrollo web comenzó con estudios formales en Coderhouse, donde me
+                        especialicé en HTML, CSS, JavaScript y React.js, completando así la carrera de Frontend. Este
+                        programa me permitió adquirir una sólida base en el diseño y desarrollo de interfaces de
+                        usuario, así como en la implementación de aplicaciones web interactivas y responsivas.
+                        <br><br>
+                        Mi pasión por la tecnología y el desarrollo web no se detuvo ahí. Actualmente, estoy cursando la
+                        carrera de Backend en la misma institución. Este nuevo desafío me ha permitido expandir mis
+                        conocimientos hacia el desarrollo del lado del servidor, abarcando tecnologías como Node.js,
+                        Express.js, y bases de datos como MongoDB. Estoy descubriendo el fascinante mundo de la lógica
+                        del servidor, la gestión de bases de datos y la creación de API robustas.
+                        <br><br>
+                        Aunque no tengo experiencia profesional formal en el campo del desarrollo web, estoy
+                        extremadamente motivada y entusiasmada por aprender y crecer en esta área. He trabajado en
+                        varios proyectos personales que me han permitido aplicar y profundizar mis
+                        conocimientos.
+                        <br><br>
+                        Me considero una persona apasionada por la tecnología y el aprendizaje continuo. Disfruto
+                        enfrentando nuevos desafíos y buscando soluciones creativas a problemas complejos. Mi objetivo
+                        es seguir desarrollando mis habilidades y conocimientos para convertirme en una desarrolladora
+                        web integral, capaz de manejar tanto el frontend como el backend de las aplicaciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <i class='bx bxs-down-arrow' id="arrow" onclick="location.href='./#experience'"></i>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explora mi</p>
+        <h1 class="title">Educación</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>SASS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>TypeScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>React JS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>Node JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>Express JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>Mongoose</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class='bx bx-check-circle'></i>
+                            <div>
+                                <h3>GitHub</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="butt btn-color-2" onclick="window.open('./assets/Mis certificados.pdf')">
+            Ver mis Certificados
+        </button>
+        <i class='bx bxs-down-arrow' id="arrow" onclick="location.href='./#projects'"></i>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Navegar por mis</p>
+        <h1 class="title">Proyectos</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/images/captura de pag desarrollo web.png" alt="Project 1"
+                            class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Proyecto Desarrollo Web</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/JulietaRaminger/ProyectoFinal-DesarrolloWeb'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Ver
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/images/carrito js.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Proyecto JavaScript</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/JulietaRaminger/ProyectoFinal-JS-RamingerJulieta'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://julietaraminger.github.io/ProyectoFinal-JS-RamingerJulieta/'">
+                            Ver
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Protecto ReactJS</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/JulietaRaminger/Proyecto-ReactJS-JulietaRaminger'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Ver
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class='bx bxs-down-arrow' id="arrow" onclick="location.href='./#contact'"></i>
+    </section>
+    <section id="contact">
+        <h1 class="title">Contactame</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class='bx bx-envelope' class="icon contact-icon email-icon" alt="Email icon"></i>
+                <p><a href="julieta.raminger@gmail.com">julieta.raminger@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class='bx bxl-linkedin' alt="LinkedIn icon" class="icon contact-icon"></i>
+                <p><a href="https://www.linkedin.com/in/julieta-raminger-programacion/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#experience">Educación</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Julieta Raminger. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
